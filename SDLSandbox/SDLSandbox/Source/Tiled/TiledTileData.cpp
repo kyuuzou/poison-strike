@@ -30,7 +30,7 @@ int TiledTileData::getIntProperty (string key, int defaultValue) {
 	if (property.length () > 0) {
 		try {
 			return stoi (property);
-		} catch (invalid_argument exception) {
+		} catch (invalid_argument& exception) {
 			return defaultValue;
 		}
 	}
