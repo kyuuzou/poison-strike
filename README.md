@@ -56,7 +56,7 @@ I had quite a bit of fun tackling this project, here are some technical details 
 ```
 .
 ├── SDLSandbox    # Main project, for Visual Studio 2015 on Windows
-├── OSX           # Secondary project, for Xcode on OSX. Links to the source and assets of the main project.
+├── OSX           # Secondary project, for Xcode on OSX. Links to SDLSandbox's source and assets.
 ├── LICENSE
 └── README.md
 ```
