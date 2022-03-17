@@ -1,0 +1,5 @@
+spells.mp3 : 01 A Night Of Dizzy Spells.mp3
+Click.wav : generated on Bfxr
+Hit.wav : generated on Bfxr
+Jump.wav : generated on Bfxr
+shooting.aiff : 170167__timgormly__8-bit-machine-gun.aiff

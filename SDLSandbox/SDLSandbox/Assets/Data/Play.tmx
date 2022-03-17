@@ -1,0 +1,1205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="576">
+ <properties>
+  <property name="Trigger" value="GameOver"/>
+ </properties>
+ <tileset firstgid="1" name="Atlas" tilewidth="96" tileheight="96" tilecount="10">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box001.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box001.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box002.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box002.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box003.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box003.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box004.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box004.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box005.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box005.png"/>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate001.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate001.png"/>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate002.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate002.png"/>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate003.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate003.png"/>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate004.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate004.png"/>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate005.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate005.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="11" name="Placeholders" tilewidth="32" tileheight="32" tilecount="1">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="box_placeholder.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../FreePlatformBoxes/box_placeholder.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="12" name="Background" tilewidth="500" tileheight="435" tilecount="2">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="background.png"/>
+   </properties>
+   <image width="500" height="435" source="../../../../../../background.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="AnimationSpeed" value="300"/>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="Frames" value="2"/>
+    <property name="TextureID" value="sunset_{0}.png"/>
+   </properties>
+   <image width="113" height="17" source="../../../../../../sunset_0.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="14" name="Ship" tilewidth="515" tileheight="181" tilecount="6">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="ship_background.png"/>
+   </properties>
+   <image width="184" height="181" source="../../../../../../ship_background.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="ship_foreground.png"/>
+   </properties>
+   <image width="515" height="120" source="../../../../../../ship_foreground.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="AnimationSpeed" value="325"/>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="Frames" value="2"/>
+    <property name="TextureID" value="flag_{0}.png"/>
+   </properties>
+   <image width="41" height="26" source="../../../../../../flag_0.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="advance.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../advance.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="pause.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../pause.png"/>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="sound.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../sound.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="20" name="Chopper" tilewidth="100" tileheight="43" tilecount="1">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="Frames" value="4"/>
+    <property name="TextureID" value="chopper_{0}.png"/>
+   </properties>
+   <image width="100" height="43" source="../../../../../../chopper_0.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="21" name="UI" tilewidth="1" tileheight="27" tilecount="1">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="progress.png"/>
+   </properties>
+   <image width="1" height="27" source="../../../../../../progress.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="Object Layer 1">
+  <object id="199" type="Decoration" gid="12" x="0" y="480" width="640" height="480"/>
+ </objectgroup>
+ <objectgroup name="Object Layer 2">
+  <object id="546" type="Decoration" gid="14" x="373" y="385" width="184" height="181"/>
+  <object id="562" type="Decoration" gid="13" x="148.55" y="267.64" width="144.73" height="21.77"/>
+  <object id="563" type="Decoration" gid="16" x="516" y="238" width="41" height="26"/>
+  <object id="567" type="MenuButton" gid="5" x="608" y="480" width="32" height="32">
+   <properties>
+    <property name="Callback" value="Mute"/>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+  <object id="573" type="MenuButton" gid="3" x="576" y="480" width="32" height="32">
+   <properties>
+    <property name="Callback" value="Pause"/>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="575" type="MenuButton" gid="1" x="544" y="480" width="32" height="32">
+   <properties>
+    <property name="Callback" value="Advance"/>
+    <property name="Color" value="Red"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 3">
+  <object id="376" type="Cell" gid="11" x="608" y="224" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="377" type="Cell" gid="11" x="480" y="320" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="378" type="Cell" gid="11" x="448" y="96" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="379" type="Cell" gid="11" x="128" y="288" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="380" type="Cell" gid="11" x="192" y="352" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="381" type="Cell" gid="11" x="352" y="224" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="382" type="Cell" gid="11" x="224" y="288" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="383" type="Cell" gid="11" x="96" y="384" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="384" type="Cell" gid="11" x="160" y="160" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="385" type="Cell" gid="11" x="416" y="352" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="386" type="Cell" gid="11" x="608" y="320" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="387" type="Cell" gid="11" x="352" y="96" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="388" type="Cell" gid="11" x="224" y="192" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="389" type="Cell" gid="11" x="480" y="160" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="390" type="Cell" gid="11" x="128" y="384" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="391" type="Cell" gid="11" x="352" y="256" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="392" type="Cell" gid="11" x="160" y="352" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="393" type="Cell" gid="11" x="416" y="128" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="394" type="Cell" gid="11" x="448" y="288" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="395" type="Cell" gid="11" x="96" y="96" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="396" type="Cell" gid="11" x="384" y="160" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="397" type="Cell" gid="11" x="576" y="256" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="398" type="Cell" gid="11" x="352" y="320" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="399" type="Cell" gid="11" x="256" y="352" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="400" type="Cell" gid="11" x="160" y="224" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="401" type="Cell" gid="11" x="512" y="224" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="402" type="Cell" gid="11" x="256" y="256" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="403" type="Cell" gid="11" x="320" y="128" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="404" type="Cell" gid="11" x="128" y="96" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="405" type="Cell" gid="11" x="448" y="192" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="406" type="Cell" gid="11" x="576" y="224" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="407" type="Cell" gid="11" x="544" y="128" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="408" type="Cell" gid="11" x="224" y="352" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="409" type="Cell" gid="11" x="512" y="320" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="410" type="Cell" gid="11" x="320" y="384" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="411" type="Cell" gid="11" x="544" y="96" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="412" type="Cell" gid="11" x="128" y="192" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="413" type="Cell" gid="11" x="384" y="224" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="414" type="Cell" gid="11" x="256" y="288" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="415" type="Cell" gid="11" x="192" y="160" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="416" type="Cell" gid="11" x="480" y="128" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="417" type="Cell" gid="11" x="416" y="320" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="418" type="Cell" gid="11" x="352" y="192" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="419" type="Cell" gid="11" x="608" y="352" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="420" type="Cell" gid="11" x="320" y="96" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="421" type="Cell" gid="11" x="544" y="384" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="422" type="Cell" gid="11" x="448" y="256" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="423" type="Cell" gid="11" x="160" y="320" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="424" type="Cell" gid="11" x="480" y="384" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="425" type="Cell" gid="11" x="352" y="288" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="426" type="Cell" gid="11" x="288" y="160" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="427" type="Cell" gid="11" x="384" y="384" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="428" type="Cell" gid="11" x="256" y="192" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="429" type="Cell" gid="11" x="576" y="352" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="430" type="Cell" gid="11" x="192" y="224" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="431" type="Cell" gid="11" x="224" y="96" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="432" type="Cell" gid="11" x="480" y="224" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="433" type="Cell" gid="11" x="288" y="128" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="434" type="Cell" gid="11" x="96" y="192" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="435" type="Cell" gid="11" x="416" y="192" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="436" type="Cell" gid="11" x="224" y="256" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="437" type="Cell" gid="11" x="544" y="288" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="438" type="Cell" gid="11" x="224" y="320" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="439" type="Cell" gid="11" x="512" y="288" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="440" type="Cell" gid="11" x="288" y="384" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="441" type="Cell" gid="11" x="512" y="96" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="442" type="Cell" gid="11" x="192" y="128" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="443" type="Cell" gid="11" x="128" y="224" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="444" type="Cell" gid="11" x="288" y="224" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="445" type="Cell" gid="11" x="608" y="128" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="446" type="Cell" gid="11" x="160" y="288" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="447" type="Cell" gid="11" x="512" y="128" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="448" type="Cell" gid="11" x="448" y="384" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="449" type="Cell" gid="11" x="608" y="256" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="450" type="Cell" gid="11" x="416" y="96" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="451" type="Cell" gid="11" x="416" y="256" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="452" type="Cell" gid="11" x="128" y="320" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="453" type="Cell" gid="11" x="192" y="384" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="454" type="Cell" gid="11" x="384" y="288" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="455" type="Cell" gid="11" x="512" y="384" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="456" type="Cell" gid="11" x="320" y="160" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="457" type="Cell" gid="11" x="352" y="384" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="458" type="Cell" gid="11" x="576" y="320" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="459" type="Cell" gid="11" x="96" y="128" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="460" type="Cell" gid="11" x="192" y="192" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="461" type="Cell" gid="11" x="192" y="96" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="462" type="Cell" gid="11" x="288" y="320" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="463" type="Cell" gid="11" x="320" y="256" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="464" type="Cell" gid="11" x="480" y="192" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="465" type="Cell" gid="11" x="384" y="128" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="466" type="Cell" gid="11" x="96" y="224" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="467" type="Cell" gid="11" x="416" y="160" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="468" type="Cell" gid="11" x="544" y="256" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="469" type="Cell" gid="11" x="320" y="320" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="470" type="Cell" gid="11" x="576" y="192" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="471" type="Cell" gid="11" x="576" y="160" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="472" type="Cell" gid="11" x="256" y="384" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="473" type="Cell" gid="11" x="480" y="288" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="474" type="Cell" gid="11" x="160" y="128" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="475" type="Cell" gid="11" x="320" y="224" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="476" type="Cell" gid="11" x="128" y="128" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="477" type="Cell" gid="11" x="608" y="160" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="478" type="Cell" gid="11" x="192" y="288" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="479" type="Cell" gid="11" x="416" y="384" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="480" type="Cell" gid="11" x="544" y="160" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="481" type="Cell" gid="11" x="608" y="288" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="482" type="Cell" gid="11" x="512" y="352" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="483" type="Cell" gid="11" x="384" y="96" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="484" type="Cell" gid="11" x="416" y="224" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="485" type="Cell" gid="11" x="96" y="288" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="486" type="Cell" gid="11" x="128" y="352" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="487" type="Cell" gid="11" x="160" y="384" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="488" type="Cell" gid="11" x="288" y="288" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="489" type="Cell" gid="11" x="224" y="160" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="490" type="Cell" gid="11" x="384" y="320" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="491" type="Cell" gid="11" x="608" y="384" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="492" type="Cell" gid="11" x="320" y="192" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="493" type="Cell" gid="11" x="160" y="192" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="494" type="Cell" gid="11" x="288" y="96" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="495" type="Cell" gid="11" x="288" y="256" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="496" type="Cell" gid="11" x="512" y="192" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="497" type="Cell" gid="11" x="96" y="256" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="498" type="Cell" gid="11" x="544" y="352" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="499" type="Cell" gid="11" x="352" y="128" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="500" type="Cell" gid="11" x="448" y="160" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="501" type="Cell" gid="11" x="224" y="224" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="502" type="Cell" gid="11" x="224" y="384" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="503" type="Cell" gid="11" x="320" y="352" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="504" type="Cell" gid="11" x="480" y="256" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="505" type="Cell" gid="11" x="576" y="96" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="506" type="Cell" gid="11" x="96" y="352" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="507" type="Cell" gid="11" x="256" y="128" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="508" type="Cell" gid="11" x="128" y="160" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="509" type="Cell" gid="11" x="384" y="192" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="510" type="Cell" gid="11" x="192" y="256" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="511" type="Cell" gid="11" x="544" y="192" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="512" type="Cell" gid="11" x="96" y="320" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="513" type="Cell" gid="11" x="448" y="320" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="514" type="Cell" gid="11" x="608" y="192" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="515" type="Cell" gid="11" x="288" y="352" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="516" type="Cell" gid="11" x="480" y="96" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="517" type="Cell" gid="11" x="128" y="256" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="518" type="Cell" gid="11" x="448" y="224" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="519" type="Cell" gid="11" x="192" y="320" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="520" type="Cell" gid="11" x="480" y="352" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="521" type="Cell" gid="11" x="320" y="288" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="522" type="Cell" gid="11" x="256" y="160" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="523" type="Cell" gid="11" x="384" y="352" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="524" type="Cell" gid="11" x="576" y="384" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="525" type="Cell" gid="11" x="288" y="192" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="526" type="Cell" gid="11" x="256" y="96" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="527" type="Cell" gid="11" x="512" y="160" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="528" type="Cell" gid="11" x="96" y="160" width="32" height="32">
+   <properties>
+    <property name="Trigger" value="GameOver"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="529" type="Cell" gid="11" x="384" y="256" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="530" type="Cell" gid="11" x="448" y="128" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="531" type="Cell" gid="11" x="416" y="288" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="532" type="Cell" gid="11" x="352" y="160" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="533" type="Cell" gid="11" x="544" y="320" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="534" type="Cell" gid="11" x="352" y="352" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="535" type="Cell" gid="11" x="576" y="288" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="536" type="Cell" gid="11" x="256" y="224" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="537" type="Cell" gid="11" x="256" y="320" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="538" type="Cell" gid="11" x="512" y="256" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="539" type="Cell" gid="11" x="224" y="128" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="540" type="Cell" gid="11" x="160" y="96" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="541" type="Cell" gid="11" x="608" y="96" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="542" type="Cell" gid="11" x="544" y="224" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="543" type="Cell" gid="11" x="160" y="256" width="32" height="32">
+   <properties>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="544" type="Cell" gid="11" x="576" y="128" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="545" type="Cell" gid="11" x="448" y="352" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="551" type="Cell" gid="11" x="640" y="224" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="552" type="Cell" gid="11" x="640" y="192" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="553" type="Cell" gid="11" x="640" y="384" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="554" type="Cell" gid="11" x="640" y="352" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="555" type="Cell" gid="11" x="640" y="160" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="556" type="Cell" gid="11" x="640" y="128" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="557" type="Cell" gid="11" x="640" y="256" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="558" type="Cell" gid="11" x="640" y="96" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="559" type="Cell" gid="11" x="640" y="320" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+  <object id="560" type="Cell" gid="11" x="640" y="288" width="32" height="32">
+   <properties>
+    <property name="Active" value="true"/>
+    <property name="Visible" value="false"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 4">
+  <object id="205" type="Decoration" gid="15" x="125" y="486" width="515" height="120"/>
+  <object id="548" type="Chopper" gid="20" x="12" y="279" width="100" height="43"/>
+ </objectgroup>
+ <objectgroup name="Object Layer 5">
+  <object id="549" type="Decoration" gid="21" x="224" y="32" width="192" height="27">
+   <properties>
+    <property name="Color" value="DarkGrey"/>
+   </properties>
+  </object>
+  <object id="564" type="Decoration" gid="17" x="544" y="480" width="32" height="32"/>
+  <object id="565" type="Decoration" gid="18" x="576" y="480" width="32" height="32"/>
+  <object id="566" type="Decoration" gid="19" x="608" y="480" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="Object Layer 6">
+  <object id="550" type="ProgressBar" gid="21" x="224" y="32" width="192" height="27"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Actors\Chopper.cpp" />
+    <ClCompile Include="Source\Actors\ProgressBar.cpp" />
+    <ClCompile Include="Source\Controller\CreditsState.cpp" />
+    <ClCompile Include="Source\Controller\GameOverState.cpp" />
+    <ClCompile Include="Source\Factory\ProgressBarSpawner.cpp" />
+    <ClCompile Include="Source\Factory\ChopperSpawner.cpp" />
+    <ClCompile Include="Source\Gameplay\Color.cpp" />
+    <ClCompile Include="Source\Actors\Decoration.cpp" />
+    <ClCompile Include="Source\Factory\BoxSpawner.cpp" />
+    <ClCompile Include="Source\Factory\DecorationSpawner.cpp" />
+    <ClCompile Include="Source\Math\RandomGenerator.cpp" />
+    <ClCompile Include="Source\Actors\Box.cpp" />
+    <ClCompile Include="Source\Gameplay\Direction.cpp" />
+    <ClCompile Include="Source\Gameplay\Grid.cpp" />
+    <ClCompile Include="Source\Gameplay\Gameplay.cpp" />
+    <ClCompile Include="Source\Actors\Cell.cpp" />
+    <ClCompile Include="Source\Factory\CellSpawner.cpp" />
+    <ClCompile Include="Source\Audio\AudioManager.cpp" />
+    <ClCompile Include="Source\Controller\PauseState.cpp" />
+    <ClCompile Include="Source\Controller\PlayState.cpp" />
+    <ClCompile Include="Source\Input\InputHandler.cpp" />
+    <ClCompile Include="Source\Textures\Atlas.cpp" />
+    <ClCompile Include="Source\Factory\MenuButtonSpawner.cpp" />
+    <ClCompile Include="Source\Services\ServiceLocator.cpp" />
+    <ClCompile Include="Source\Controller\GameController.cpp" />
+    <ClCompile Include="Source\Controller\GameState.cpp" />
+    <ClCompile Include="Source\Controller\MainMenuState.cpp" />
+    <ClCompile Include="Source\Controller\StateMachine.cpp" />
+    <ClCompile Include="Source\Factory\GameObjectFactory.cpp" />
+    <ClCompile Include="Source\Libraries\TinyXML\tinystr.cpp" />
+    <ClCompile Include="Source\Libraries\TinyXML\tinyxml.cpp" />
+    <ClCompile Include="Source\Libraries\TinyXML\tinyxmlerror.cpp" />
+    <ClCompile Include="Source\Libraries\TinyXML\tinyxmlparser.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Actors\MenuButton.cpp" />
+    <ClCompile Include="Source\Textures\TextureManager.cpp" />
+    <ClCompile Include="Source\Tiled\TiledObject.cpp" />
+    <ClCompile Include="Source\Tiled\TiledParser.cpp" />
+    <ClCompile Include="Source\Services\IServiceProvider.cpp" />
+    <ClCompile Include="Source\Actors\GameObject.cpp" />
+    <ClCompile Include="Source\Tiled\TiledState.cpp" />
+    <ClCompile Include="Source\Tiled\TiledTileData.cpp" />
+    <ClCompile Include="Source\Tiled\TiledTileset.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Actors\Chopper.h" />
+    <ClInclude Include="Source\Actors\IInhabitant.h" />
+    <ClInclude Include="Source\Actors\ProgressBar.h" />
+    <ClInclude Include="Source\Controller\CreditsState.h" />
+    <ClInclude Include="Source\Controller\GameOverState.h" />
+    <ClInclude Include="Source\Factory\ProgressBarSpawner.h" />
+    <ClInclude Include="Source\Factory\ChopperSpawner.h" />
+    <ClInclude Include="Source\Gameplay\Color.h" />
+    <ClInclude Include="Source\Actors\Decoration.h" />
+    <ClInclude Include="Source\Factory\BoxSpawner.h" />
+    <ClInclude Include="Source\Factory\DecorationSpawner.h" />
+    <ClInclude Include="Source\Gameplay\IGameplay.h" />
+    <ClInclude Include="Source\Math\Math.h" />
+    <ClInclude Include="Source\Math\IRandomGenerator.h" />
+    <ClInclude Include="Source\Math\RandomGenerator.h" />
+    <ClInclude Include="Source\Actors\Box.h" />
+    <ClInclude Include="Source\Gameplay\Grid.h" />
+    <ClInclude Include="Source\Gameplay\Direction.h" />
+    <ClInclude Include="Source\Gameplay\Gameplay.h" />
+    <ClInclude Include="Source\Actors\Cell.h" />
+    <ClInclude Include="Source\Factory\CellSpawner.h" />
+    <ClInclude Include="Source\Audio\IAudioManager.h" />
+    <ClInclude Include="Source\Audio\AudioManager.h" />
+    <ClInclude Include="Source\Controller\IGameController.h" />
+    <ClInclude Include="Source\Controller\PauseState.h" />
+    <ClInclude Include="Source\Controller\PlayState.h" />
+    <ClInclude Include="Source\Input\IInputHandler.h" />
+    <ClInclude Include="Source\Input\InputHandler.h" />
+    <ClInclude Include="Source\Textures\Atlas.h" />
+    <ClInclude Include="Source\Factory\IGameObjectFactory.h" />
+    <ClInclude Include="Source\Factory\MenuButtonSpawner.h" />
+    <ClInclude Include="Source\Actors\MenuButton.h" />
+    <ClInclude Include="Source\Textures\ITextureManager.h" />
+    <ClInclude Include="Source\Textures\TextureData.h" />
+    <ClInclude Include="Source\Textures\TextureManager.h" />
+    <ClInclude Include="Source\Tiled\TiledTileData.h" />
+    <ClInclude Include="Source\Tiled\TiledObject.h" />
+    <ClInclude Include="Source\Services\IServiceProvider.h" />
+    <ClInclude Include="Source\Services\ServiceLocator.h" />
+    <ClInclude Include="Source\Controller\GameController.h" />
+    <ClInclude Include="Source\Controller\GameState.h" />
+    <ClInclude Include="Source\Controller\MainMenuState.h" />
+    <ClInclude Include="Source\Controller\StateMachine.h" />
+    <ClInclude Include="Source\Factory\ISpawner.h" />
+    <ClInclude Include="Source\Factory\GameObjectFactory.h" />
+    <ClInclude Include="Source\Libraries\TinyXML\tinystr.h" />
+    <ClInclude Include="Source\Libraries\TinyXML\tinyxml.h" />
+    <ClInclude Include="Source\Tiled\TiledParser.h" />
+    <ClInclude Include="Source\Math\Vector2D.h" />
+    <ClInclude Include="Source\Actors\GameObject.h" />
+    <ClInclude Include="Source\Tiled\TiledTileset.h" />
+    <ClInclude Include="Source\Tiled\TiledState.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Textures\animate-alpha.png" />
+    <Image Include="Assets\Textures\animate.bmp" />
+    <Image Include="Assets\Textures\animate.png" />
+    <Image Include="Assets\Textures\helicopter.png" />
+    <Image Include="Assets\Textures\helicopter2.png" />
+    <Image Include="Assets\Textures\rider.bmp" />
+    <Image Include="Assets\Textures\UI\Buttons\exit.png" />
+    <Image Include="Assets\Textures\UI\Buttons\mainMenu.png" />
+    <Image Include="Assets\Textures\UI\Buttons\play.png" />
+    <Image Include="Assets\Textures\UI\Buttons\restart.png" />
+    <Image Include="Assets\Textures\UI\Buttons\resume.png" />
+    <Image Include="Assets\Textures\UI\gameover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libFLAC-8.dll" />
+    <None Include="libjpeg-9.dll" />
+    <None Include="libmikmod-2.dll" />
+    <None Include="libmodplug-1.dll" />
+    <None Include="libogg-0.dll" />
+    <None Include="libpng16-16.dll" />
+    <None Include="libtiff-5.dll" />
+    <None Include="libvorbis-0.dll" />
+    <None Include="libvorbisfile-3.dll" />
+    <None Include="libwebp-4.dll" />
+    <None Include="SDL2.dll" />
+    <None Include="SDL2_image.dll" />
+    <None Include="SDL2_mixer.dll" />
+    <None Include="smpeg2.dll" />
+    <None Include="Tools\PNGCrush\pngcrush.exe" />
+    <None Include="Tools\PNGCrush\run.bat" />
+    <None Include="zlib1.dll" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1F00679D-9723-4DCA-B478-E07F23F2AEAF}</ProjectGuid>
+    <RootNamespace>SDLSandbox</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\SDL\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDL\lib\win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\SDL\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDL\lib\win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4458</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4458</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

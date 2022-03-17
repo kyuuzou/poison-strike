@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="245">
+ <tileset firstgid="1" name="Atlas" tilewidth="96" tileheight="96" tilecount="14">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box001.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box001.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box002.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box002.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box003.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box003.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box004.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box004.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box005.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box005.png"/>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate001.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate001.png"/>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate002.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate002.png"/>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate003.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate003.png"/>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate004.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate004.png"/>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate005.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate005.png"/>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="play.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../play.png"/>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="exit.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../exit.png"/>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="info.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../info.png"/>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="sound.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../sound.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="15" name="Background" tilewidth="500" tileheight="435" tilecount="2">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="background.png"/>
+   </properties>
+   <image width="500" height="435" source="../../../../../../background.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="AnimationSpeed" value="300"/>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="Frames" value="2"/>
+    <property name="TextureID" value="sunset_{0}.png"/>
+   </properties>
+   <image width="113" height="17" source="../../../../../../sunset_0.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="17" name="Ship" tilewidth="515" tileheight="181" tilecount="3">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="ship_background.png"/>
+   </properties>
+   <image width="184" height="181" source="../../../../../../ship_background.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="ship_foreground.png"/>
+   </properties>
+   <image width="515" height="120" source="../../../../../../ship_foreground.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="AnimationSpeed" value="325"/>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="Frames" value="2"/>
+    <property name="TextureID" value="flag_{0}.png"/>
+   </properties>
+   <image width="41" height="26" source="../../../../../../flag_0.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="Object Layer 1">
+  <object id="87" type="Decoration" gid="15" x="0" y="480" width="640" height="480"/>
+ </objectgroup>
+ <objectgroup name="Object Layer 2">
+  <object id="89" type="Decoration" gid="17" x="373" y="385" width="184" height="181"/>
+  <object id="231" type="Decoration" gid="16" x="148.545" y="267.636" width="144.727" height="21.77"/>
+  <object id="233" type="Decoration" gid="19" x="516" y="238" width="41" height="26"/>
+  <object id="241" type="MenuButton" gid="3" x="544" y="384" width="96" height="96">
+   <properties>
+    <property name="Callback" value="Credits"/>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 3">
+  <object id="95" type="MenuButton" gid="1" x="256" y="384" width="96" height="96">
+   <properties>
+    <property name="Callback" value="Play"/>
+    <property name="Color" value="Green"/>
+   </properties>
+  </object>
+  <object id="96" type="MenuButton" gid="7" x="160" y="384" width="96" height="96">
+   <properties>
+    <property name="Callback" value="Quit"/>
+    <property name="Color" value="Red"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 4">
+  <object id="90" type="Decoration" gid="18" x="125" y="486" width="515" height="120"/>
+ </objectgroup>
+ <objectgroup name="Object Layer 5">
+  <object id="32" type="Box" gid="3" x="160" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="36" type="Box" gid="7" x="160" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="37" type="Box" gid="8" x="160" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="41" type="Box" gid="10" x="160" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="42" type="Box" gid="2" x="276.364" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="43" type="Box" gid="4" x="188.091" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="46" type="Box" gid="1" x="218.182" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="48" type="Box" gid="6" x="160" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="49" type="Box" gid="9" x="174.545" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="55" type="Box" gid="1" x="218.182" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="58" type="Box" gid="4" x="232.727" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="60" type="Box" gid="9" x="218.182" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="61" type="Box" gid="10" x="246.273" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="62" type="Box" gid="2" x="232.727" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="63" type="Box" gid="8" x="218.182" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="64" type="Box" gid="7" x="246.273" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="66" type="Box" gid="6" x="218.182" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="72" type="Box" gid="6" x="276.364" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="73" type="Box" gid="10" x="246.273" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="74" type="Box" gid="8" x="246.273" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="76" type="Box" gid="5" x="276.364" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="77" type="Box" gid="10" x="276.364" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="78" type="Box" gid="7" x="333.545" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="79" type="Box" gid="6" x="333.545" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="81" type="Box" gid="10" x="333.545" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="82" type="Box" gid="8" x="305.455" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="83" type="Box" gid="2" x="319" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="84" type="Box" gid="4" x="319" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="85" type="Box" gid="9" x="276.364" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="88" type="Box" gid="4" x="246.273" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="130" type="Box" gid="7" x="462.455" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="131" type="Box" gid="8" x="377.182" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="132" type="Box" gid="1" x="391.727" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="133" type="Box" gid="8" x="420.818" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="134" type="Box" gid="10" x="391.727" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="135" type="Box" gid="9" x="305.455" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="136" type="Box" gid="6" x="391.727" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="137" type="Box" gid="9" x="188.091" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="138" type="Box" gid="7" x="420.818" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="139" type="Box" gid="4" x="391.727" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="140" type="Box" gid="6" x="420.818" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="141" type="Box" gid="3" x="174.545" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="142" type="Box" gid="8" x="434.364" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="143" type="Box" gid="6" x="448.909" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="144" type="Box" gid="8" x="363.636" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="145" type="Box" gid="10" x="363.636" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="146" type="Box" gid="1" x="391.727" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="147" type="Box" gid="4" x="188.091" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="148" type="Box" gid="7" x="305.455" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="149" type="Box" gid="6" x="305.455" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="150" type="Box" gid="5" x="363.636" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="152" type="Box" gid="10" x="462.455" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="153" type="Box" gid="2" x="377.182" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="154" type="Box" gid="10" x="333.545" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="155" type="Box" gid="2" x="363.636" y="90.6364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="156" type="Box" gid="2" x="363.636" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="157" type="Box" gid="10" x="420.818" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="158" type="Box" gid="9" x="420.818" y="104.182" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="159" type="Box" gid="4" x="319" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="160" type="Box" gid="2" x="462.455" y="62.5455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="161" type="Box" gid="5" x="462.455" y="48" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="162" type="Box" gid="4" x="462.455" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="163" type="Box" gid="9" x="181.091" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="164" type="Box" gid="4" x="239.273" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="165" type="Box" gid="2" x="342.091" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="166" type="Box" gid="7" x="457.455" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="167" type="Box" gid="4" x="399.273" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="169" type="Box" gid="9" x="181.091" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="170" type="Box" gid="3" x="167.545" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="171" type="Box" gid="7" x="429.364" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="172" type="Box" gid="6" x="195.636" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="174" type="Box" gid="4" x="195.636" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="175" type="Box" gid="10" x="312" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="177" type="Box" gid="6" x="385.727" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="179" type="Box" gid="4" x="297.455" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="180" type="Box" gid="2" x="371.182" y="176.909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="181" type="Box" gid="10" x="371.182" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="182" type="Box" gid="10" x="312" y="148.818" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="183" type="Box" gid="1" x="167.545" y="148.818" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="184" type="Box" gid="8" x="167.545" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="185" type="Box" gid="2" x="429.364" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="186" type="Box" gid="4" x="443.909" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="187" type="Box" gid="6" x="429.364" y="148.818" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="188" type="Box" gid="1" x="225.727" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="189" type="Box" gid="1" x="399.273" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="190" type="Box" gid="8" x="429.364" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="191" type="Box" gid="6" x="283.909" y="148.818" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="192" type="Box" gid="5" x="443.909" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="193" type="Box" gid="4" x="297.455" y="176.909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="194" type="Box" gid="7" x="167.545" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="195" type="Box" gid="2" x="371.182" y="148.818" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="196" type="Box" gid="9" x="283.909" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="197" type="Box" gid="10" x="443.909" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="198" type="Box" gid="2" x="239.273" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="199" type="Box" gid="6" x="283.909" y="176.909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="200" type="Box" gid="8" x="253.818" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="202" type="Box" gid="10" x="399.273" y="148.818" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="203" type="Box" gid="1" x="399.273" y="176.909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="205" type="Box" gid="6" x="239.273" y="176.909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="206" type="Box" gid="2" x="429.364" y="176.909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="207" type="Box" gid="8" x="239.273" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="208" type="Box" gid="9" x="342.091" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="210" type="Box" gid="10" x="342.091" y="148.818" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="211" type="Box" gid="8" x="457.455" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="212" type="Box" gid="6" x="342.091" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="213" type="Box" gid="10" x="239.273" y="148.818" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="216" type="Box" gid="4" x="195.636" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="218" type="Box" gid="8" x="283.909" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="219" type="Box" gid="3" x="181.091" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="220" type="Box" gid="10" x="195.636" y="176.909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="221" type="Box" gid="5" x="371.182" y="135.273" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="222" type="Box" gid="7" x="283.909" y="162.364" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="223" type="Box" gid="8" x="371.182" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="224" type="Box" gid="7" x="312" y="190.455" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="225" type="Box" gid="5" x="342.091" y="176.909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="227" type="Box" gid="1" x="448.909" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="228" type="Box" gid="1" x="434.364" y="76.0909" width="14.5455" height="14.5455">
+   <properties>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+  <object id="234" type="Decoration" gid="11" x="288" y="352" width="32" height="32"/>
+  <object id="237" type="Decoration" gid="12" x="192" y="352" width="32" height="32"/>
+  <object id="238" type="Decoration" gid="13" x="576" y="352" width="32" height="32"/>
+  <object id="243" type="MenuButton" gid="5" x="608" y="480" width="32" height="32">
+   <properties>
+    <property name="Callback" value="Mute"/>
+    <property name="Color" value="Pink"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 6">
+  <object id="244" type="Decoration" gid="14" x="608" y="480" width="32" height="32"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:138925e91ca4dca547a2209f2e7d6c01:0b92ced346d05054934cf34e969a758c:cde709370900f12288f3449eded86f07$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="atlas.png" width="1024" height="1024">
+    <sprite n="progress.png" x="0" y="0" w="1" h="27" pX="0.5" pY="0.5"/>
+    <sprite n="purple.png" x="1" y="0" w="5" h="5" pX="0.5" pY="0.5"/>
+    <sprite n="mainmenu.png" x="6" y="0" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="play.png" x="38" y="0" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="info.png" x="70" y="0" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="pause.png" x="102" y="0" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="exit.png" x="134" y="0" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="sound.png" x="166" y="0" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="advance.png" x="198" y="0" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="refresh.png" x="230" y="0" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="box_placeholder.png" x="262" y="0" w="32" h="32" pX="0.5" pY="0.5"/>
+    <sprite n="flag_0.png" x="294" y="0" w="41" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="flag_1.png" x="335" y="0" w="41" h="26" pX="0.5" pY="0.5"/>
+    <sprite n="shooting.png" x="376" y="0" w="61" h="42" pX="0.5" pY="0.5"/>
+    <sprite n="obj_crate002.png" x="437" y="0" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="obj_crate003.png" x="533" y="0" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="obj_crate005.png" x="629" y="0" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="obj_crate001.png" x="725" y="0" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="obj_crate004.png" x="821" y="0" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="obj_box005.png" x="917" y="0" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="obj_box002.png" x="0" y="96" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="obj_box001.png" x="96" y="96" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="obj_box003.png" x="192" y="96" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="obj_box004.png" x="288" y="96" w="96" h="96" pX="0.5" pY="0.5"/>
+    <sprite n="chopper_0.png" x="384" y="96" w="100" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="chopper_2.png" x="484" y="96" w="100" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="chopper_1.png" x="584" y="96" w="100" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="chopper_3.png" x="684" y="96" w="100" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="chopper_4.png" x="784" y="96" w="100" h="43" pX="0.5" pY="0.5"/>
+    <sprite n="sunset_1.png" x="884" y="96" w="113" h="17" pX="0.5" pY="0.5"/>
+    <sprite n="sunset_0.png" x="0" y="192" w="113" h="17" pX="0.5" pY="0.5"/>
+    <sprite n="title.png" x="113" y="192" w="179" h="44" pX="0.5" pY="0.5"/>
+    <sprite n="ship_background.png" x="292" y="192" w="184" h="181" pX="0.5" pY="0.5"/>
+    <sprite n="credits.png" x="476" y="192" w="379" h="290" pX="0.5" pY="0.5"/>
+    <sprite n="background.png" x="0" y="482" w="500" h="435" pX="0.5" pY="0.5"/>
+    <sprite n="ship_foreground.png" x="500" y="482" w="515" h="120" pX="0.5" pY="0.5"/>
+</TextureAtlas>

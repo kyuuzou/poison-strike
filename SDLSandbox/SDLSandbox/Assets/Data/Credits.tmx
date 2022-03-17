@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" nextobjectid="257">
+ <tileset firstgid="1" name="Atlas" tilewidth="379" tileheight="290" tilecount="17">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box001.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box001.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box002.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box002.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box003.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box003.png"/>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box004.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box004.png"/>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_box005.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_box005.png"/>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate001.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate001.png"/>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate002.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate002.png"/>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate003.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate003.png"/>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate004.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate004.png"/>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="obj_crate005.png"/>
+   </properties>
+   <image width="96" height="96" source="../../../../../../FreePlatformBoxes/obj_crate005.png"/>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="play.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../play.png"/>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="exit.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../exit.png"/>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="info.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../info.png"/>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="mainmenu.png"/>
+   </properties>
+   <image width="32" height="32" source="../../../../../../mainmenu.png"/>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="credits.png"/>
+   </properties>
+   <image width="379" height="290" source="../../../../../../credits.png"/>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="purple.png"/>
+   </properties>
+   <image width="5" height="5" source="../../../../../../purple.png"/>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="title.png"/>
+   </properties>
+   <image width="179" height="44" source="../../../../../../title.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="18" name="Background" tilewidth="500" tileheight="435" tilecount="2">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="background.png"/>
+   </properties>
+   <image width="500" height="435" source="../../../../../../background.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="AnimationSpeed" value="300"/>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="Frames" value="2"/>
+    <property name="TextureID" value="sunset_{0}.png"/>
+   </properties>
+   <image width="113" height="17" source="../../../../../../sunset_0.png"/>
+  </tile>
+ </tileset>
+ <tileset firstgid="20" name="Ship" tilewidth="515" tileheight="181" tilecount="3">
+  <tile id="0">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="ship_background.png"/>
+   </properties>
+   <image width="184" height="181" source="../../../../../../ship_background.png"/>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="TextureID" value="ship_foreground.png"/>
+   </properties>
+   <image width="515" height="120" source="../../../../../../ship_foreground.png"/>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="AnimationSpeed" value="325"/>
+    <property name="AtlasID" value="atlas.png"/>
+    <property name="Frames" value="2"/>
+    <property name="TextureID" value="flag_{0}.png"/>
+   </properties>
+   <image width="41" height="26" source="../../../../../../flag_0.png"/>
+  </tile>
+ </tileset>
+ <objectgroup name="Object Layer 1">
+  <object id="87" type="Decoration" gid="18" x="0" y="480" width="640" height="480"/>
+ </objectgroup>
+ <objectgroup name="Object Layer 2">
+  <object id="89" type="Decoration" gid="20" x="373" y="385" width="184" height="181"/>
+  <object id="231" type="Decoration" gid="19" x="148.545" y="267.636" width="144.727" height="21.77"/>
+  <object id="233" type="Decoration" gid="22" x="516" y="238" width="41" height="26"/>
+ </objectgroup>
+ <objectgroup name="Object Layer 3"/>
+ <objectgroup name="Object Layer 4">
+  <object id="90" type="Decoration" gid="21" x="125" y="486" width="515" height="120"/>
+ </objectgroup>
+ <objectgroup name="Object Layer 5">
+  <object id="254" type="Decoration" gid="16" x="32" y="448" width="576" height="416"/>
+ </objectgroup>
+ <objectgroup name="Object Layer 6">
+  <object id="247" type="MenuButton" gid="3" x="480" y="288" width="96" height="96">
+   <properties>
+    <property name="Callback" value="MainMenu"/>
+    <property name="Color" value="Blue"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="Object Layer 7">
+  <object id="242" type="Decoration" gid="14" x="512" y="256" width="32" height="32"/>
+  <object id="250" type="Decoration" gid="17" x="224" y="108" width="179" height="44"/>
+  <object id="256" type="Decoration" gid="15" x="64" y="416" width="379" height="290"/>
+ </objectgroup>
+</map>
