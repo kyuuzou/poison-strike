@@ -13,6 +13,7 @@
 </p>
 <p align="center">
   <a href="https://www.codacy.com/gh/kyuuzou/poison-strike/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kyuuzou/poison-strike&amp;utm_campaign=Badge_Grade" target="_blank"><img src="https://app.codacy.com/project/badge/Grade/d2c5f4c88f2a46218ccf465d528fb76b"/></a>
+  <a href="https://github.com/libsdl-org/SDL/releases" target="_blank"><img src="https://img.shields.io/badge/SDL-2.0-blue" /></a>
   <a href="https://github.com/kyuuzou/poison-strike/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-blue.svg" />
   </a>
